@@ -121,7 +121,7 @@ document.write('<div class="mes">' + dias[f.getDate() - 1] + '</div>')
 document.write('<div class="container-2">')
 // document.write('<div class="dia">' + meses[f.getMonth()] + '</div>')
 document.write(
-  '<div class="numero">' + symbols[f.getDate() - 1] + '<sup>15</sup></div>'
+  '<div class="numero">' + symbols[f.getDate() - 1] + '<sup>'dias.indexOf(dias[f.getDate() - 1])'</sup></div>'
 )
 document.write(
   '<div class="año">' + electron_config[f.getDate() - 1] + '</div>'
