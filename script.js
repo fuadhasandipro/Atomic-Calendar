@@ -1,3 +1,5 @@
+// Initialization of date
+
 var f = new Date()
 const meses = [
   'January',
@@ -121,8 +123,11 @@ document.write('<div class="mes">' + dias[f.getDate() - 1] + '</div>')
 document.write('<div class="container-2">')
 // document.write('<div class="dia">' + meses[f.getMonth()] + '</div>')
 document.write(
-  '<div class="numero">' + symbols[f.getDate() - 1] + '<sup>'+
-    dias.indexOf(dias[f.getDate()]) +'</sup></div>'
+  '<div class="numero">' +
+    symbols[f.getDate() - 1] +
+    '<sup>' +
+    dias.indexOf(dias[f.getDate()]) +
+    '</sup></div>'
 )
 document.write(
   '<div class="año">' + electron_config[f.getDate() - 1] + '</div>'
